@@ -1,0 +1,26 @@
+{
+  "name": "@kaonui/docs",
+  "version": "0.1.0",
+  "description": "Documentation for kaonui component library",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "biome lint src/",
+    "format": "biome format --write src/",
+    "check": "biome check src/",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.15.0",
+    "@kaonui/lit-components": "file:../../packages/lit-components",
+    "@kaonui/vue-components": "file:../../packages/vue-components",
+    "astro": "^4.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "typescript": "^5.2.2"
+  }
+}

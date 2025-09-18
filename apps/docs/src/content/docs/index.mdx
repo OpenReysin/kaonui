@@ -1,0 +1,39 @@
+---
+title: Welcome to KaonUI
+description: A modern component library built with Lit and Vue
+template: splash
+hero:
+  title: |
+    Build with
+    <span class="text-accent">KaonUI</span>
+  tagline: A modern component library with Lit Elements and Vue wrappers
+  image:
+    alt: KaonUI logo
+  actions:
+    - text: Get started
+      link: /introduction/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/Conventional-Convention/kaonui
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Features
+
+<CardGrid stagger>
+  <Card title="🚀 Modern Stack" icon="rocket">
+    Built with Lit Elements for web standards compliance and performance.
+  </Card>
+  <Card title="🎯 Vue Integration" icon="add-document">
+    Pre-built Vue wrappers with full TypeScript support for seamless integration.
+  </Card>
+  <Card title="📱 Responsive Design" icon="setting">
+    Mobile-first approach with responsive components that work everywhere.
+  </Card>
+  <Card title="♿ Accessibility First" icon="approve-check">
+    WCAG 2.1 AA compliant components with built-in accessibility features.
+  </Card>
+</CardGrid>
