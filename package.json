@@ -1,0 +1,30 @@
+{
+  "name": "kaonui",
+  "version": "1.0.0",
+  "description": "KaoNUI Component Library",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "@types/node": "latest",
+    "typescript": "latest",
+    "eslint": "latest",
+    "prettier": "latest"
+  },
+  "dependencies": {
+    "@kaonui/lit-components": "*",
+    "@kaonui/vue-components": "*"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

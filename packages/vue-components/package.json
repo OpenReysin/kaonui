@@ -1,0 +1,43 @@
+{
+  "name": "@kaonui/vue-components",
+  "version": "1.0.0",
+  "description": "Vue-based components for KaoNUI",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc && vite build",
+    "dev": "vite",
+    "test": "vitest",
+    "lint": "eslint src/**/*.{ts,vue}"
+  },
+  "dependencies": {
+    "vue": "latest",
+    "@kaonui/lit-components": "*"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "vue-tsc": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "eslint": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint-plugin-vue": "latest"
+  },
+  "peerDependencies": {
+    "vue": "latest",
+    "@kaonui/lit-components": "*"
+  }
+}

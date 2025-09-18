@@ -1,0 +1,34 @@
+{
+  "name": "@kaonui/test-app",
+  "version": "1.0.0",
+  "description": "Test application for KaoNUI components",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@kaonui/lit-components": "*",
+    "@kaonui/vue-components": "*",
+    "vue": "latest",
+    "lit": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "vite": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "@vitejs/plugin-react": "latest",
+    "typescript": "latest",
+    "vitest": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  },
+  "peerDependencies": {
+    "vue": "latest",
+    "lit": "latest",
+    "react": "latest"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@kaonui/lit-components",
+  "version": "1.0.0",
+  "description": "Lit-based components for KaoNUI",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "lit": "latest",
+    "@lit/decorators": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "eslint": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest"
+  },
+  "peerDependencies": {
+    "lit": "latest"
+  }
+}

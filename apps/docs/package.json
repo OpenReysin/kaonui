@@ -1,0 +1,27 @@
+{
+  "name": "@kaonui/docs",
+  "version": "1.0.0",
+  "description": "Documentation for KaoNUI components",
+  "private": true,
+  "scripts": {
+    "build": "vitepress build",
+    "dev": "vitepress dev",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@kaonui/lit-components": "*",
+    "@kaonui/vue-components": "*",
+    "vue": "latest",
+    "lit": "latest"
+  },
+  "devDependencies": {
+    "vitepress": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "peerDependencies": {
+    "vue": "latest",
+    "lit": "latest"
+  }
+}
