@@ -48,6 +48,9 @@
 </template>
 
 <script setup lang="ts">
+import { KaonButton } from '@kaonui/vue';
+import { KaonCard } from '@kaonui/vue';
+
 import { ref } from 'vue';
 
 const clickCount = ref(0);

@@ -1,5 +1,5 @@
 {
-  "name": "@kaonui/vue-components",
+  "name": "@kaonui/vue",
   "version": "0.1.0",
   "description": "Vue wrappers for kaonui Lit components",
   "type": "module",
@@ -25,15 +25,19 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@kaonui/lit-components": "*"
+    "@kaonui/lit": "workspace:*"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
-    "@vitejs/plugin-vue": "^4.4.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0",
+    "@microsoft/api-extractor": "^7.52.13",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "typescript": "~5.8.3",
+    "unplugin-dts": "1.0.0-beta.0",
+    "vite": "^7.1.6",
     "vitest": "^0.34.6",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-tsc": "^3.0.7"
   },
   "peerDependencies": {
     "vue": "^3.3.0"

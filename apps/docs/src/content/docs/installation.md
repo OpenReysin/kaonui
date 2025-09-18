@@ -3,8 +3,6 @@ title: Installation
 description: How to install and set up KaonUI in your project
 ---
 
-# Installation
-
 KaonUI provides packages for both Lit Elements and Vue.js. Choose the installation method that matches your project setup.
 
 ## Prerequisites

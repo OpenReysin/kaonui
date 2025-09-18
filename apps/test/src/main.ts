@@ -1,5 +1,4 @@
 import { createApp } from 'vue';
-import KaonUI from '@kaonui/vue-components';
 import App from './App.vue';
 import './style.css';
 

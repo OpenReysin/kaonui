@@ -3,8 +3,6 @@ title: Card Component
 description: A flexible container component for grouping related content
 ---
 
-# Card Component
-
 The Card component provides a flexible container for grouping related content with optional header and footer sections.
 
 ## Basic Usage

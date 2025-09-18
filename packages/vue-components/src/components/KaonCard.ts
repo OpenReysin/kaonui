@@ -1,5 +1,5 @@
 import { defineComponent, h } from 'vue';
-import '@kaonui/lit-components';
+import '@kaonui/lit';
 
 export interface KaonCardProps {
   title?: string;

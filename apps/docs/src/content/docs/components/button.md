@@ -3,8 +3,6 @@ title: Button Component
 description: A versatile button component with multiple variants and states
 ---
 
-# Button Component
-
 The Button component is a fundamental interactive element that triggers actions when clicked.
 
 ## Basic Usage

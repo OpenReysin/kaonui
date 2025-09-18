@@ -4,7 +4,7 @@
   "description": "Test application for kaonui components",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "biome lint src/",
@@ -13,7 +13,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@kaonui/vue-components": "*",
+    "@kaonui/vue": "workspace:*",
     "vue": "^3.3.4"
   },
   "devDependencies": {
