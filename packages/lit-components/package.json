@@ -1,9 +1,10 @@
 {
   "name": "@kaonui/lit-components",
-  "version": "0.1.0",
-  "description": "Lit-based component library for kaonui",
+  "version": "1.0.0",
+  "description": "Lit-based components for KaoNUI",
   "type": "module",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {

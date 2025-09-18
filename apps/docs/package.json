@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.15.0",
-    "@kaonui/lit-components": "file:../../packages/lit-components",
-    "@kaonui/vue-components": "file:../../packages/vue-components",
+    "@kaonui/lit-components": "*",
+    "@kaonui/vue-components": "*",
     "astro": "^4.0.0"
   },
   "devDependencies": {

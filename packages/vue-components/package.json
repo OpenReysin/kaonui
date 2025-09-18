@@ -4,6 +4,7 @@
   "description": "Vue wrappers for kaonui Lit components",
   "type": "module",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -24,7 +25,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@kaonui/lit-components": "file:../lit-components"
+    "@kaonui/lit-components": "*"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
