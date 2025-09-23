@@ -1,40 +1,40 @@
 {
-  "name": "@kaonui/lit",
-  "version": "1.0.0",
-  "description": "Lit-based components for KaoNUI",
-  "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsc && vite build",
-    "dev": "vite build --watch",
-    "lint": "biome lint src/",
-    "format": "biome format --write src/",
-    "check": "biome check src/",
-    "test": "vitest",
-    "clean": "rm -rf dist"
-  },
-  "dependencies": {
-    "lit": "^3.3.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.2.4",
-    "jsdom": "^27.0.0",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.6",
-    "vitest": "^3.2.4"
-  },
-  "peerDependencies": {
-    "lit": "^3.3.1"
-  }
+	"name": "@kaonui/lit",
+	"version": "1.0.0",
+	"description": "Lit-based components for KaoNUI",
+	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc && vite build",
+		"dev": "vite build --watch",
+		"lint": "biome lint src/",
+		"format": "biome format --write src/",
+		"check": "biome check src/",
+		"test": "vitest",
+		"clean": "rm -rf dist"
+	},
+	"dependencies": {
+		"lit": "^3.3.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.4",
+		"jsdom": "^27.0.0",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.6",
+		"vitest": "^3.2.4"
+	},
+	"peerDependencies": {
+		"lit": "^3.3.1"
+	}
 }

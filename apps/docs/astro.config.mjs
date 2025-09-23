@@ -1,23 +1,30 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+
+import starlight from "@astrojs/starlight";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'KaonUI',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: "KaonUI",
+			social: [
+				{
+					icon: "github",
+					label: "GitHub",
+					href: "https://github.com/withastro/starlight",
+				},
+			],
 			sidebar: [
 				{
-					slug: 'introduction',
+					slug: "introduction",
 				},
 				{
-					slug: 'installation',
+					slug: "installation",
 				},
 				{
-					label: 'Components',
-					autogenerate: { directory: 'components' },
+					label: "Components",
+					autogenerate: { directory: "components" },
 				},
 			],
 		}),

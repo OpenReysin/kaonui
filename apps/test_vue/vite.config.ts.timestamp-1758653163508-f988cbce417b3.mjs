@@ -1,0 +1,13 @@
+// vite.config.ts
+
+import vue from "file:///home/er28/WebstormProjects/kaonui/node_modules/.pnpm/@vitejs+plugin-vue@4.6.2_vite@4.5.14_@types+node@24.5.2__vue@3.5.21_typescript@5.9.2_/node_modules/@vitejs/plugin-vue/dist/index.mjs";
+import { defineConfig } from "file:///home/er28/WebstormProjects/kaonui/node_modules/.pnpm/vite@4.5.14_@types+node@24.5.2/node_modules/vite/dist/node/index.js";
+
+var vite_config_default = defineConfig({
+	plugins: [vue()],
+	server: {
+		port: 5173,
+	},
+});
+export { vite_config_default as default };
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvaG9tZS9lcjI4L1dlYnN0b3JtUHJvamVjdHMva2FvbnVpL2FwcHMvdGVzdF92dWVcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZmlsZW5hbWUgPSBcIi9ob21lL2VyMjgvV2Vic3Rvcm1Qcm9qZWN0cy9rYW9udWkvYXBwcy90ZXN0X3Z1ZS92aXRlLmNvbmZpZy50c1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vaG9tZS9lcjI4L1dlYnN0b3JtUHJvamVjdHMva2FvbnVpL2FwcHMvdGVzdF92dWUvdml0ZS5jb25maWcudHNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJztcbmltcG9ydCB2dWUgZnJvbSAnQHZpdGVqcy9wbHVnaW4tdnVlJztcblxuZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHtcbiAgcGx1Z2luczogW3Z1ZSgpXSxcbiAgc2VydmVyOiB7XG4gICAgcG9ydDogNTE3MyxcbiAgfSxcbn0pOyJdLAogICJtYXBwaW5ncyI6ICI7QUFBa1UsU0FBUyxvQkFBb0I7QUFDL1YsT0FBTyxTQUFTO0FBRWhCLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQzFCLFNBQVMsQ0FBQyxJQUFJLENBQUM7QUFBQSxFQUNmLFFBQVE7QUFBQSxJQUNOLE1BQU07QUFBQSxFQUNSO0FBQ0YsQ0FBQzsiLAogICJuYW1lcyI6IFtdCn0K

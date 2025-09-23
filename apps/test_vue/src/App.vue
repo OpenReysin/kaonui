@@ -9,10 +9,10 @@
       <section class="section">
         <h2>Button Components</h2>
         <div class="button-group">
-          <KaonButton @click="handleClick">Primary Button</KaonButton>
-          <KaonButton variant="secondary" @click="handleClick">Secondary Button</KaonButton>
-          <KaonButton variant="danger" @click="handleClick">Danger Button</KaonButton>
-          <KaonButton disabled>Disabled Button</KaonButton>
+          <kaon-button @click="handleClick">Primary Button</kaon-button>
+          <kaon-button variant="secondary" @click="handleClick">Secondary Button</kaon-button>
+          <kaon-button variant="danger" @click="handleClick">Danger Button</kaon-button>
+          <kaon-button disabled>Disabled Button</kaon-button>
         </div>
       </section>
 
@@ -22,7 +22,7 @@
           <KaonCard title="Basic Card">
             <p>This is a basic card with a title and some content.</p>
             <template #footer>
-              <KaonButton variant="primary">Action</KaonButton>
+              <kaon-button variant="primary">Action</kaon-button>
             </template>
           </KaonCard>
 
@@ -36,9 +36,9 @@
 
           <KaonCard title="Interactive Card">
             <p>Click count: {{ clickCount }}</p>
-            <KaonButton @click="incrementCount">Increment</KaonButton>
+            <kaon-button @click="incrementCount">Increment</kaon-button>
             <template #footer>
-              <KaonButton variant="secondary" @click="resetCount">Reset</KaonButton>
+              <kaon-button variant="secondary" @click="resetCount">Reset</kaon-button>
             </template>
           </KaonCard>
         </div>
@@ -48,22 +48,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import {KaonCard} from "@kaonui/vue/src/components/KaonCard";
-import {KaonButton} from "@kaonui/vue/src/components/KaonButton";
+import { ref } from "vue";
 
 const clickCount = ref(0);
 
-const handleClick = (event: Event) => {
-  console.log('Button clicked:', event);
+const _handleClick = (event: Event) => {
+	console.log("Button clicked:", event);
 };
 
-const incrementCount = () => {
-  clickCount.value++;
+const _incrementCount = () => {
+	clickCount.value++;
 };
 
-const resetCount = () => {
-  clickCount.value = 0;
+const _resetCount = () => {
+	clickCount.value = 0;
 };
 </script>
 

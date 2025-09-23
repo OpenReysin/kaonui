@@ -1,9 +1,9 @@
-import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { css, html, LitElement } from "lit";
+import { customElement, property } from "lit/decorators.js";
 
-@customElement('kaon-card')
+@customElement("kaon-card")
 export class KaonCard extends LitElement {
-  static styles = css`
+	static styles = css`
     :host {
       display: block;
     }
@@ -40,19 +40,21 @@ export class KaonCard extends LitElement {
     }
   `;
 
-  @property({ type: String })
-  title = '';
+	@property({ type: String })
+	title = "";
 
-  render() {
-    return html`
+	render() {
+		return html`
       <div class="card">
-        ${this.title
-          ? html`
+        ${
+					this.title
+						? html`
               <div class="header">
                 <h3>${this.title}</h3>
               </div>
             `
-          : ''}
+						: ""
+				}
         <div class="content">
           <slot></slot>
         </div>
@@ -61,5 +63,5 @@ export class KaonCard extends LitElement {
         </div>
       </div>
     `;
-  }
+	}
 }

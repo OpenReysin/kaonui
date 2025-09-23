@@ -1,29 +1,29 @@
-import { defineComponent, h } from 'vue';
-import '@kaonui/lit';
+import { defineComponent, h } from "vue";
+import "@kaonui/lit";
 
 export interface KaonCardProps {
-  title?: string;
+	title?: string;
 }
 
 export const KaonCard = defineComponent<KaonCardProps>({
-  name: 'KaonCard',
-  props: {
-    title: {
-      type: String,
-      default: '',
-    },
-  },
-  setup(props, { slots }) {
-    return () =>
-      h(
-        'kaon-card',
-        {
-          title: props.title,
-        },
-        {
-          default: () => slots.default?.(),
-          footer: () => slots.footer?.(),
-        }
-      );
-  },
+	name: "KaonCard",
+	props: {
+		title: {
+			type: String,
+			default: "",
+		},
+	},
+	setup(props, { slots }) {
+		return () =>
+			h(
+				"kaon-card",
+				{
+					title: props.title,
+				},
+				{
+					default: () => slots.default?.(),
+					footer: () => slots.footer?.(),
+				},
+			);
+	},
 });
