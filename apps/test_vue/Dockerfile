@@ -14,7 +14,7 @@ COPY . .
 
 # Generate a partial monorepo with a pruned lockfile for a target workspace.
 # Assuming "web" is the name entered in the project's package.json: { name: "web" }
-RUN pnpm turbo prune web --docker
+RUN pnpm turbo prune test_vue --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM base AS installer
