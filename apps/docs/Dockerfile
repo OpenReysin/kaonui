@@ -40,7 +40,7 @@ USER astrouser
 
 # Copy the built application from installer
 # Astro static builds go to dist by default
-COPY --from=installer --chown=astrouser:nodejs /app/apps/web/dist ./apps/web/dist
+COPY --from=installer --chown=astrouser:nodejs /app/apps/docs/dist ./apps/docs/dist
 
 # Install a simple static file server
 RUN pnpm add -g serve
