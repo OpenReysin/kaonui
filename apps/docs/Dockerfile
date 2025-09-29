@@ -13,7 +13,7 @@ RUN pnpm add -D turbo@^2.5.5
 COPY . .
 
 # Generate a partial monorepo with a pruned lockfile for a target workspace.
-# Assuming "web" is the name entered in the project's package.json: { name: "web" }
+# Assuming "docs" is the name entered in the project's package.json: { name: "docs" }
 RUN pnpm turbo prune docs --docker
 
 # Add lockfile and package.json's of isolated subworkspace
@@ -30,23 +30,14 @@ RUN pnpm install --frozen-lockfile
 COPY --from=builder /app/out/full/ .
 RUN pnpm turbo run build
 
-FROM base AS runner
-WORKDIR /app
-
-# Don't run production as root
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 astrouser
-USER astrouser
+FROM nginx:alpine AS runner
 
 # Copy the built application from installer
 # Astro static builds go to dist by default
-COPY --from=installer --chown=astrouser:nodejs /app/apps/docs/dist ./apps/docs/dist
-
-# Install a simple static file server
-RUN pnpm add -g serve
+COPY --from=installer /app/apps/docs/dist /usr/share/nginx/html
 
 # Expose port
-EXPOSE 3000
+EXPOSE 80
 
-# Serve the static files
-CMD ["serve", "-s", "apps/web/dist", "-l", "3000"]
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
